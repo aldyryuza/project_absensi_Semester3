@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'hobostd';
+    src: url('../fonts/HoboStd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'aguavina';
+    src: url('../fonts/Aguavina.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'candara';
+    src: url('../fonts/candara.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'telescope';
+    src: url('../fonts/Telescope.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .separator{
+    border-bottom: thin gray dotted;
+  }
+  
+  .logo-lg{
+    font-family: candara;
+    font-size: 1.5em;
+  }
+  
+  /*.treeview-menu .item{
+    transition: background linear 0.4s;
+  }
+  .treeview-menu .item:hover{
+    background:rgb(96, 96, 96,0.1);
+    transition: background linear 0.4s;
+  }
+  */
+  .splash-info{
+      position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+    width: 300px;
+    height: auto;
+    padding:10px;  
+    z-index:99999 !important;
+    border: 1px solid #FF8000;
+    border-radius: 4px;
+    border-left:10px solid #FF8000;
+    border-right:10px solid #FF8000;
+    background-color: #FEFDD8;
+    box-sizing: content-box;
+  }
+  .preloader{
+      position:absolute;
+    left:45%;
+    right:55%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+      z-index:99999 !important;
+      opacity:0.3!important;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 10px solid white;
+    border-top: 10px solid #747474;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    -moz-animation: spin 2s linear infinite; 
+    -o-animation: spin 2s linear infinite; 
+    -ms-animation: spin 2s linear infinite;   
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @-webkit-keyframes xspin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes xspin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* ukuran modal */
+  .modal-body{
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+  }
+  
+  /* table.dataTable td{
+    padding-top:3px!important;
+    padding-bottom:3px!important;
+  } */
+  
+  .no-caret{
+    width: 26px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  .no-caret option{
+    background: #FFFFE6;
+    color: gray;
+    border: #FFFFE6 1px solid;
+  }
+  
+  /* Identitas Software IPHI */
+  .text1{
+    font-family: candara;
+    font-size: 15pt;
+    color: green;
+    line-height: 0.99em;
+    display:block;
+  }
+  .text2{
+    font-family: candara;
+    font-size: 10pt;
+    color: gray;
+    line-height: 0.99em;
+    display:block;
+  }
+  /* untuk melanjutkan teks yang panjang*/
+  .read-more{
+    background: rgba(255,255,255,0.5);
+    padding:0px 3px;
+    border-radius: 3px;
+  }
+  .read-more:hover{
+    cursor: pointer;
+  }
+  
+  /* tombol presensi */
+  [btnket]{
+    background-color: #FBFBFB;
+  }
+  [btnket]:hover{
+    border:1px gray solid;
+    border-radius:3px;
+  }
+  [btnket='h'].active{
+    background-color: #02ff0269!important;
+  }
+  [btnket^='d'].active,[btnket='i'].active{
+    background-color: #01EBFE!important;
+  }
+  [btnket='a'].active{
+    background-color: #ff000052!important;
+  }
+  [btnket='s'].active{
+    background-color: #FFCA95!important;
+  }
+  
+  /* baris presensi */
+  .barispresensi[dbket='']{
+    color: #AA0000;
+  }

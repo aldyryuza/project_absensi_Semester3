@@ -1,0 +1,14 @@
+tambah rekap minimal 1 minggu , semester , bulan , stahaun .
+tambah rekap sementara sebelum presensi
+tambah rekap di menu presensi
+
+tambah identitas pengguna , sekolah
+hadir untuk menu siswa dihilangkan
+
+-+
+tambah rekap bukan per mapel
+
+isi about :
+1. tentang program
+2. programer & lembaga
+3. foto developer

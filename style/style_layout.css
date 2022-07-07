@@ -1,0 +1,49 @@
+
+  
+:root{
+  --hheader:100px;
+  --hfooter:50px;
+  --wmenu:200px;
+  --hmenu:calc(100vh - var(--hheader) - var(--hfooter));
+  --wcontent:calc(100vw - var(--wmenu) - 33px);
+  }
+
+/* Layout Halaman */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+.lay-header{
+  height:50px;
+
+  }
+.lay-menu{
+  float: left;
+  vertical-align: top;
+  width:var(--wmenu);
+  height: var(--hmenu);
+  background-color: var(--bgmenu);
+  }
+.lay-content{
+  float: left;
+  vertical-align: top;
+  /* overflow: auto; */
+  /* width:var(--wcontent); */
+
+  }
+#content{
+  padding:10px;
+}
+.lay-footer{
+  height:var(--hfooter);
+  width:100vw;
+  }
+.lay-label{
+  height: 30px;       /*height=line-height==> middle center*/
+  line-height: 30px;
+  font-size: 12pt;
+  font-stretch: condensed;
+  padding-left: 1em;
+  background-color: #D6D6D6;
+  }  
